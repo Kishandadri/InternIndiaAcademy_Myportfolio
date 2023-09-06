@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ee131d8cea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <main>
+        <section class="firstsection">
+
+          <div class="leftsection">
+            Hi, My name is <span class="red">Kishan</span>
+
+            <div>and I am a passionate</div>
+
+            <span id="element"></span>
+          </div>
+          <div class="rightsection">
+            <img src="images/img.png" alt="">
+          </div>
+        </section>
+      </main>
+
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'Java Developer.', 'Web Designer.'],
+          typeSpeed: 50,
+        });
+      </script>
+
+    </div>
+
+
+
+
+    <!-- ---------------About------------ -->
+
+
+
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/img.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Kishan Shrivastav, a dedicated and ambitious individual currently in his third year of pursuing a
+              Bachelor of Computer Applications (BCA) degree. With a passion for technology and a thirst for knowledge,
+              Kishan is carving his path in the world of programming and web development. Kishan's journey into web
+              development showcases his versatility. He has embarked on the exciting journey of learning web
+              development, with a focus on both frontend and backend technologies. While He's just getting started in
+              frontend development, his grasp of HTML and CSS basics is already noteworthy. He's also familiar with
+              JavaScript at a basic level, a language that forms the backbone of modern web applications. In addition to
+              his technical abilities, kishan is an excellent problem solver and a natural team player. He's always
+              eager to collaborate with others, exchange ideas, and tackle complex coding challenges. His strong work
+              ethic, passion for programming, and thirst for knowledge make his an asset to any project or team he's a
+              part of. As Kishan enters his third year of BCA and continues to expand his web development skills, it's
+              clear that he's not just a student but a future leader in the world of technology. With his diverse skill
+              set and determination, he's poised to make a significant impact in the field of computer science and
+              software development.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('project')">Project</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>HTML <br>CSS <br> Javascript</li>
+                <li><span>Java Developer</span><br>Java</li>
+                <li><span>C/C++</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="project">
+              <ul>
+                <li><span>To-Do List</span><br>HTML <br>CSS <br> Javascript</li>
+                <li><span>Web Calculator</span><br>HTML <br>CSS <br> Javascript</li>
+                <li><span>Stopwatch</span><br>HTML <br>CSS <br>Javascript</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2019</span><br>Highschool at Vivekanand Convent School</li>
+                <li><span>2021</span><br>Intermediate at Mihir Bhoj Inter College</li>
+                <li><span>2021-2024</span><br>Bachelor's of computer Applications at GL Bajaj Institute of Management
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- ---------------------skills------------------ -->
+
+
+
+
+    <div id="skills">
+      <div class="container">
+        <h1 class="sub-title">My Skill</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Proficient in HTML and CSS, with the ability to create visually appealing and responsive user interfaces.
+              Continuously improving skills in creating engaging web designs and layouts.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-file"></i>
+            <h2>C/C++</h2>
+            <p>Proficient in the C programming language, with a strong understanding of its core concepts, data types,
+              and syntax. Well-versed in implementing and working with various data structures in C/C++, including
+              arrays, linked lists, stacks, queues, trees.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java</h2>
+            <p>Highly skilled in Core Java programming, with a deep understanding of the language's fundamentals,
+              including data types, operators, and control structures. Proficient in applying OOP principles in Java,
+              including encapsulation, inheritance, polymorphism, and abstraction, to design and develop modular and
+              maintainable code.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- -----------------portfolio------------------ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/todolist.png">
+            <div class="layer">
+              <h3>TO-DO LIST</h3>
+              <p>As a web developer, I had the opportunity to design, develop, and maintain a feature-rich To-Do List
+                web application, providing users with a powerful tool to organize tasks, increase productivity, and
+                manage their daily schedules.</p>
+              <a href=" https://kishandadri.github.io/CodeClauseInternship_To-Do-List/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/timer.png">
+            <div class="layer">
+              <h3>STOPWATCH & TIMER</h3>
+              <p>As a Web Developer at Stopwatch Web, I played a pivotal role in coding the stopwatch & timer algorithms. I contributed to the success of the company by CODING SAMURAI.</p>
+              <a href=" https://kishandadri.github.io/CodeClauseInternship_StopWatch-Timer/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/calculator.png">
+            <div class="layer">
+              <h3>CALCULAOR</h3>
+              <p>As a Web Developer on the calculator project, I was responsible for coding the calculator algorithms.</p>
+              <a href=" https://kishandadri.github.io/CODING-SAMURAI-INTERNSHIP-TASK/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- --------------contact----------- -->
+
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i>kishanshrivastava36@gmail.com</p>
+            <p> <i class="fa-solid fa-phone"></i>8800129673</p>
+            <div class="social-icons">
+              <a href="https://github.com/Kishandadri"><i class="fa-brands fa-square-github"></i></i></a>
+              <a href="https://www.facebook.com/kishan.kanhaiya.125760?mibextid=D4KYlr"><i
+                  class="fa-brands fa-facebook"></i></i></a>
+              <a href="https://www.linkedin.com/in/kishan-789129216"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://instagram.com/kishan_official__01?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i
+                  class="fa-brands fa-instagram"></i></i></a>
+            </div>
+            <a href="images/Resume.PDF" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="copyright">
+        <p>Copyright © Kishanportfolio.com </p>
+      </div>
+    </div>
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyGPDyHV_tYl__Z0kAYxvlHf7MRuDS-OQIPnHE_JECpPOG8PkLJb0wvLyr3YuQfriQg/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function () {
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+
+</html>
